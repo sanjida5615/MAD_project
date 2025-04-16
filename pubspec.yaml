@@ -1,0 +1,62 @@
+name: money_tracker
+description: A simple offline expense tracker app built with Flutter & Hive.
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  get: ^4.6.6
+
+  # Database
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Data Serialization
+  build_runner: ^2.4.6
+  hive_generator: ^2.0.1
+
+  # Charts for Analytics
+  fl_chart: ^0.63.0
+
+  # Icons
+  font_awesome_flutter: ^10.6.0
+
+dev_dependencies:
+  flutter_lints: ^3.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/avater_male.png  # Folder for user profile photos or icons
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
+        - asset: assets/fonts/Montserrat-SemiBold.ttf
+          weight: 600
+    - family: FontAwesomeRegular
+      fonts:
+        - asset: packages/font_awesome_flutter/fonts/fa-regular-400.ttf
+    - family: FontAwesomeBrands
+      fonts:
+        - asset: packages/font_awesome_flutter/fonts/fa-brands-400.ttf
+    - family: FontAwesomeSolid
+      fonts:
+        - asset: packages/font_awesome_flutter/fonts/fa-solid-900.ttf
